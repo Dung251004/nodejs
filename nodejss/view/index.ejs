@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Management</h1>
+        <!-- Form để chèn sản phẩm mới -->
+        <form action="/products" method="POST">
+            <div class="form-group">
+                <label for="productCode">Product Code:</label>
+                <input type="text" class="form-control" id="productCode" name="productCode">
+            </div>
+            <div class="form-group">
+                <label for="productName">Product Name:</label>
+                <input type="text" class="form-control" id="productName" name="productName">
+            </div>
+            <!-- Thêm các trường thông tin sản phẩm khác -->
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
+    </div>
+</body>
+</html>
